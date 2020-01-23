@@ -1,0 +1,486 @@
+@import "about.css";
+@import "contact.css";
+
+.main-header.scrolled {
+    z-index: 9999999;
+}
+
+/*//////////////////////////////////////////////*/
+
+body{
+            font-family: merienda !important;
+}
+.container p{
+                font-family: merienda !important;
+}
+
+.main-header.scrolled {
+    height: 66px;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+}
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #1d1d1d url('../img/giphy.gif') no-repeat center;
+    z-index: 9999999;
+}
+
+.logo img {
+    width: 100px;
+    padding: 25px;
+    /*    height: 50%;*/
+
+}
+
+/*////////////////////////////service section///////////////////////////////*/
+#services{
+    background-color: beige;
+padding-bottom: 20px;
+}
+.section-title h1{
+    text-transform: uppercase;
+    color: slategrey;
+}
+.section-title p{
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: slategrey;
+}
+
+.section-title hr{
+    width: 30%;
+    border: 2px solid  greenyellow;
+    border-radius: 50%;
+    margin-left: 34%;
+}
+.service-wrap {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 25px 35px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    z-index: 3;
+    margin-top: 20px;
+}
+
+.service-wrap::before,
+.service-wrap::after {
+    content: "";
+    height: 300%;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 120%;
+    z-index: -3;
+    transition: all 0.5s;
+    opacity: 0;
+    background: #34495e;
+}
+
+.service-wrap::before {
+    top: -50px;
+    left: 100%;
+}
+
+/*///////////////////cursur then hover bottom to top coming half shadow/////////*/
+.service-wrap:hover:before {
+    left: -27px;
+    opacity: 1;
+}
+
+.service-wrap::after {
+    bottom: -37px;
+    right: 100%;
+}
+
+/*///////////////////cursur then hover top to bottom  coming half shadow/////////*/
+.service-wrap:hover:after {
+    right: -35px;
+    opacity: 1;
+}
+
+/*/////////////////////cursor then point text color white///////////////////*/
+.service-wrap:hover {
+    color: white;
+}
+
+/*//////////////////////////////*/
+.service-wrap:h3 {
+    color: white;
+}
+
+.service-wrap:hover h3 {
+    color: white;
+}
+
+.service-wrap:hover h3:after {
+    background-color: white;
+}
+
+/*/////////////////////////////*/
+.service-icon i {
+    font-size: 30px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+.service-wrap:hover .service-icon i {
+    transform: rotate(360deg);
+}
+
+.service-wrap h3{
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.service-wrap p{
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+/*////////////////////animation typed text//////////////////*/
+ .type, .typed-cursor{
+    display: inline;
+    font-size: 25px;
+     margin-left: -10px;
+    margin-top: -33%;
+/*    text-transform: uppercase;*/
+}
+
+.hero h1{
+    margin-top: -30%;
+}
+.typed-cursor{
+    opacity: 1;
+    animation: blink 0.7s infinite;
+    -webkit-animation: blink 0.7s infinite; 
+    -moz-animation: blink 0.7s infinite; 
+}
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@-webkit-keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}@-moz-keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*////////////////////////watch////////////////////*/
+.clock{
+    width: auto;
+    height: auto;
+    justify-content: center !important;
+    display: flex;
+   
+}
+.flip-clock-dot{
+    background: white !important;
+}
+.flip-clock-meridium a{
+    color: white !important;
+}
+.flip-clock-wrapper {
+    text-align: center;
+    position: relative !important;
+    width: 100%;
+    margin: 0em !important;
+    margin-top: -40% !important;
+}
+/*/////////////////////////////////////////////////////services//////////////*/
+
+
+.our_feature_area .feature_row .feature_content .media .media-left a i{
+    font-size: 24px;
+    color:  greenyellow;
+    line-height: 50px;
+    width: 60px;
+    text-align: center;
+    background: #333333;
+    border: 5px solid  greenyellow;
+    margin-top: 3px;
+    
+
+}
+
+.our_feature_area .feature_row .feature_content .media .media-body a  {
+    font: 700 18px "Roboto", sans-serif;
+    color: green;
+    text-transform: uppercase;
+    margin-left: 5%;
+    margin-top: 10px;
+    
+}
+.our_feature_area .feature_row .feature_content .media .media-body p{
+    font: 400 14px/26px "Roboto", sans-serif;
+    color: #555555;
+    padding-top: 10px;
+    margin-left: 5%;
+}
+.subtittle h2{
+    color: grey;
+    font-weight: bold;
+}
+.subtittle p{
+    line-height: 24px;
+    letter-spacing: 1px;
+
+}
+
+
+
+
+
+
+
+
+
+.client_say{
+    color: white;
+    font-weight: bold;
+    
+}
+
+/*//////////footer area/////////////*/
+
+#footer-area{
+    padding: 90px 0 60px 0;
+    background: #262626;
+    color: #fff;
+/*    margin-top: 10%;*/
+}
+.footer-social{
+    margin-top: 20px;
+}
+.single-footer p{
+        font-family: merienda !important;
+
+}
+.single-footer h3{
+    font-weight: 500;
+    margin-bottom: 25px;
+    color: #fafafa;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-family: merienda;
+}
+.single-footer .anglrighticon li a i{
+     color: #fff;
+    padding: 8px;
+    font-weight: 500;
+    font-size: 19px;
+/*    border: 1px solid white;*/
+}
+.link-area li{
+    padding: 5px 5px 5px 0;
+    list-style: none;
+}
+.link-area li a{
+    text-transform: capitalize;
+    color: #ddd;
+    font-family: merienda;
+}
+.link-area li a i{
+    margin-right: 10px;
+    color: #ddd;
+}
+.link-area{
+    padding: 0;
+}
+.single-footer ul li {
+    list-style: none;
+    font-size: 16px;
+}
+.single-footer ul li a:hover{
+    text-decoration: none;
+}
+.single-social li a{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: #000;
+}
+.footer-social li a i{
+    color: #fff;
+    padding: 8px;
+    font-weight: 500;
+    font-size: 25px;
+    border: 1px solid white;
+}
+.widget li{
+    float: left;
+    width: 50%;
+/*    border: 1px solid white;*/
+    
+    background-color:white ;
+}
+.widget li a img{
+/*    margin-bottom: -10px;*/
+    width: 100%;
+    height: 70%;
+}
+.copyright-area{
+    background: #000;
+    padding: 30px 0;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+.copyright-area p{
+    font-weight: 600;
+    color: #fafafa;  
+    font-family: merienda;
+    font-size: 20px;
+}
+.copyright-area p strong{
+    font-size: 29px;
+}
+.copyright-area p a{
+    color: white;
+}
+
+.copyright-area p a:hover{
+    text-decoration: none;
+}
+
+/*counting number section*/
+       
+.counting-sec{
+  padding: 40px 0;
+  width: 100%;
+  background: linear-gradient(90deg,#3c6382,#82ccdd);
+}
+.inner-width{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+}
+.col{
+  flex: 1;
+  text-align: center;
+  padding: 25px;
+   
+  color: #fff;
+  text-transform: uppercase;
+}
+.col i{
+  font-size: 40px;
+  color: #333;
+}
+.num{
+  font-size: 40px;
+  margin: 20px 0;
+}
+@media only screen and (max-width: 785px){
+    .num strong{
+        display: none;
+    }
+    .col i{
+  font-size: 20px;
+  color: #333;
+}
+    .num{
+  font-size: 20px;
+  margin: 10px 0;
+}
+    .col{
+  padding: 2px;
+   
+  color: #fff;
+  text-transform: uppercase;
+}
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*/////////////////////android//////*/
+@media only screen and (max-width: 784px){
+
+.flip-clock-wrapper ul li a div div.inn {
+    font-size: 35px !important;
+    }
+    .flip-clock-wrapper{
+        width: 100% !important;
+    }
+    .flip-clock-wrapper {
+    margin-top: -30% !important;
+}
+    .service-area{
+    margin-top: 20px;
+}
+    .featureimgt img:nth-last-child(1){
+    display: none;
+}
+    .skill3 {
+    display: grid;
+}
+    .skill4bord{
+        border-left: 3px solid white;
+    }
+   
+    
+}
+/*////////////////////////desctop view////////////////////////////////*/
+@media only screen and (min-width: 785px){
+    .typed-cursor{
+      font-size: 45px;
+        margin-left: -10px;
+    margin-top: -31%;
+    }
+    .flip-clock-wrapper {
+    margin-top: -12% !important;
+}
+    
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px){
+.white-popup {
+    
+    max-width: 57% !important;
+}
+}

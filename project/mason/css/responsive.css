@@ -1,0 +1,103 @@
+
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .section-padding {
+        padding: 35px 0;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+    .section-padding {
+        padding: 30px 0;
+    }
+
+    .section-header {
+        margin-top: 15px;
+    }
+
+    .services-area .section-header {
+        margin-bottom: 0;
+    }
+
+    .counter {
+        font-size: 25px;
+    }
+
+    .single-number p {
+        font-size: 14px;
+    }
+
+    .single-number i {
+        font-size: 25px;
+    }
+
+    .white-popup {
+        padding: 10px;
+        max-width: 95%;
+    }
+
+    .por-text h2 {
+        margin-top: 25px;
+        font-size: 18px;
+    }
+
+    .por-text-details p {
+        font-size: 12px;
+    }
+
+    .block-quote p {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .single-contact {
+        margin-bottom: 30px;
+    }
+
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+   
+    .single-portfolio img {
+        width: 100%;
+    }
+
+    .contact-area {
+        background-position: inherit;
+    }
+
+
+
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 767px){
+
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px){
+   
+}
+
+@media only screen and (min-width: 411px) and (max-width: 767px){
+    .carousel-caption h1 {
+        font-size: 33px;
+    }
+    .timeline-area {
+        width: 380px;
+    }
+
+}
+
+
